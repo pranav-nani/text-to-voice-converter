@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: hsla(225, 40%, 54%, 1);
+    background: linear-gradient(45deg, hsla(225, 40%, 54%, 1) 0%, hsla(284, 75%, 54%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(225, 40%, 54%, 1) 0%, hsla(284, 75%, 54%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(225, 40%, 54%, 1) 0%, hsla(284, 75%, 54%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5c73b9", endColorstr="#b330e1", GradientType=1 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.hero h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.hero h1 span{
+    color: #FF55BB;
+}
+::placeholder{
+    color: white;
+    font-size: 16px;
+}
+textarea{
+    width: 600px;
+    height: 250px;
+    padding: 15px;
+    background: rgba( 92, 70, 156, 0.75 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+.row{
+    width: 670px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+button{
+    background-color: #ff2963;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+button i{
+    width: 16px;
+    margin-right: 10px;
+}
+.row select{
+    flex: 1; /* Let all the flexible items be the same length, regardless of its content: */
+    color: white;
+    height: 50px;
+    padding: 0px 20px;
+    outline: 0;
+    background: rgba( 92, 70, 156, 0.75 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 35px;
+    appearance: none;
+    background-image: url("angle-down.svg");
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position-x: calc(100% - 10px);
+    background-position-y: 4px;
+}
+
+/* --------------choose file ------------ */
+input[type="file"]{
+    display: none;
+}
+
+label{
+    color: white;
+    height: 40px;
+    width: 200px;
+    background-color: #FF55BB;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-align: center;
+}
